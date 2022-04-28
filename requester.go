@@ -175,7 +175,7 @@ func (r *Requester) ExtractInformation() {
 	}
 
 	// extract the name
-	Name := doc.Find("div[class='strong']").Text()
+	Name := doc.Find("div[class='bb bc']").Text()
 
 	// extract the image
 	Image := doc.Find("img[class='y z m ba']").AttrOr("src", "No IMAGE")
